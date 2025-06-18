@@ -1,0 +1,23 @@
+*{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: blue;
+}
+
+#parrafounico {
+  color: red;
+}
+
+.elementolista {
+  color: orange;
+}
+
+/* .elementolista{
+  color: green;
+}
+ */
+
