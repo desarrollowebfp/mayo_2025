@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #cadada;
+  --secondary-color: #222222;
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-family-base: "Arial", sans-serif;
+  --font-family-secondary: "Helvetica", sans-serif;
+  --box-shadow: 2px 2px 2px black;
+  --spacing: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--font-family-secondary);
+}
+ */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 10px;
+  padding: 10px;
+}
+
+body > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* body > img:nth-child(1){
+   grid-row: 1/3;
+   grid-column: 1/3;
+}
+
+body > img:nth-child(5){
+   grid-row: 3/5
+} */
