@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --tertiary-color: #f3f4f6;
+  --spacing: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(./assets/backgrounds/guitars.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header > nav {
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+}
+
+header > nav > ul {
+  display: flex;
+  gap: var(--spacing);
+}
+
+header > nav > img {
+  height: 48px;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  #navlinks {
+    display: none;
+  }
+}
