@@ -23,14 +23,41 @@ a {
   color: inherit;
 }
 
-header {
-  min-height: 100vh;
+.abtn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  width: fit-content;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+body > header {
+  position: relative;
   background-image: url(./assets/backgrounds/guitars.jpg);
   background-position: center;
   background-size: cover;
 }
 
-header > nav {
+body > header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: 0;
+}
+
+body > header > nav {
+  position: relative;
+  height: 10vh;
   color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
@@ -38,12 +65,12 @@ header > nav {
   padding: var(--spacing);
 }
 
-header > nav > ul {
+body > header > nav > ul {
   display: flex;
   gap: var(--spacing);
 }
 
-header > nav > img {
+body > header > nav > img {
   height: 48px;
   width: auto;
 }
@@ -52,4 +79,45 @@ header > nav > img {
   #navlinks {
     display: none;
   }
+}
+
+#hero {
+  color: var(--secondary-color);
+  min-height: 100%;
+  padding: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  position: relative;
+  text-align: justify;
+}
+
+section > header {
+  padding: var(--spacing);
+}
+
+section > header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section ul {
+  padding: var(--spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing);
+}
+
+section ul img {
+  width: 100%;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+.alternative{
+  background-color: var(--tertiary-color);
 }
