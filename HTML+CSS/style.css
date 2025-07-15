@@ -4,14 +4,14 @@
   --primary-color: #000000;
   --secondary-color: #ffffff;
   --tertiary-color: #f3f4f6;
-  --spacing: 18px;
-  font-family: "Montserrat", sans-serif;
+  --spacing: 40px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -95,29 +95,94 @@ body > header > nav > img {
   text-align: justify;
 }
 
-section > header {
+main > section > header {
   padding: var(--spacing);
 }
 
-section > header > div {
+main > section > header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-section ul {
+main > section ul {
   padding: var(--spacing);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--spacing);
 }
 
-section ul img {
+main > section ul img {
   width: 100%;
   aspect-ratio: 1.1;
   object-fit: cover;
 }
 
-.alternative{
+.alternative {
   background-color: var(--tertiary-color);
+}
+
+footer > #links {
+  padding: var(--spacing);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  display: flex;
+  gap: var(--spacing);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer > #links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer .formBtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  width: fit-content;
+  height: auto;
+  white-space: nowrap;
+}
+
+footer form {
+  max-width: 400px;
+  height: auto;
+}
+
+footer form input {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  min-width: 200px;
+  height: auto;
+  white-space: nowrap;
+}
+
+footer #buro {
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing);
+  flex-wrap: wrap;
+}
+
+footer #buro img {
+  height: 18px;
+  width: auto;
+}
+
+footer #buro nav {
+  display: flex;
+  gap: var(--spacing);
+  flex-wrap: wrap;
+}
+
+footer #buro ul {
+  display: flex;
+  gap: 10px;
 }
