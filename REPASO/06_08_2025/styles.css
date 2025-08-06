@@ -79,7 +79,7 @@ section {
   transition: 0.5s;
   animation: fadeInAndAppear linear;
   animation-timeline: view();
-  animation-range: entry 0% entry 40%;
+  animation-range: entry 0% entry 30%;
 }
 
 #blog li:hover {
