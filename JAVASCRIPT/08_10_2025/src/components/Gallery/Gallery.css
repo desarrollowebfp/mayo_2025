@@ -1,0 +1,24 @@
+main > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+main ul img {
+  width: 100%;
+  height: auto;
+}
+
+main ul h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+main ul div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main ul li h3 {
+  white-space: nowrap;
+}
