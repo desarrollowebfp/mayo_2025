@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+#characters_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+li {
+  padding: 20px;
+}
+
+img {
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+.alive {
+    border: 1px dashed green
+}
+
+.dead {
+   border: 1px dashed red;
+}
+
+.unknown {
+   border: 1px dashed grey;
+}
