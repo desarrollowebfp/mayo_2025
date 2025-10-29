@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comentarios</title>
+    <style>
+      /* styles.css */
+      .comment {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Deja un comentario</h1>
+    <input type="text" id="commentInput" placeholder="Tu comentario" />
+    <button onclick="addComment()">Publicar</button>
+    <div id="comments"></div>
+    <!-- <img
+      src="x"
+      onerror="
+        while(true){alert('Hola')}
+    "
+    /> -->
+    <script>
+      // vulnerable.js
+      function addComment() {
+        const comment = document.getElementById("commentInput").value;
+        const commentsDiv = document.getElementById("comments");
+
+        // ¡VULNERABILIDAD! Insertamos HTML directamente
+        commentsDiv.innerHTML += `<div class="comment">${comment}</div>`;
+
+        document.getElementById("commentInput").value = "";
+      }
+    </script>
+  </body>
+</html>
