@@ -1,0 +1,14 @@
+{
+  "name": "11_03_2026",
+  "version": "0.0.1",
+  "description": "Este es un servidor con http y rutas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales Martínez (http://lethamburn.vercel.app/)",
+  "license": "ISC",
+  "type": "commonjs"
+}
